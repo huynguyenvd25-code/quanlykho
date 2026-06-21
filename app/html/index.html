@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <section class="landing">
+
+        <!-- MENU -->
+        <nav class="navbar">
+
+            <div class="menu-left">
+            ☰
+            </div>
+
+            <div class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Contact</a>
+            </div>
+
+            <div class="auth-buttons">
+                <button class="auth-btn" onclick="openLogin()">Đăng nhập</button>
+                <button class="auth-btn" onclick="openRegister()">Đăng ký</button>
+            </div>
+            
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="landing-content">
+
+            <div class="text">
+
+            <h1>Gallery</h1>
+
+            <p>
+                Hệ thống quản lý kho hiện đại,
+                quản lý sản phẩm nhanh chóng
+                và đơn giản.
+            </p>
+
+            </div>
+
+            <div class="image">
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popup đăng nhập -->
+    <div class="modal hidden" id="loginModal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>Đăng nhập</h2>
+
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="password" placeholder="Mật khẩu">
+
+            <button>Đăng nhập</button>
+
+            <p class="switch-form">
+                Chưa có tài khoản?
+                <span onclick="switchToRegister()">Đăng ký</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Popup đăng ký -->
+    <div class="modal hidden" id="registerModal">
+        <div class="modal-box">
+            <span class="close" onclick="closeModal()">&times;</span>
+
+            <h2>Đăng ký</h2>
+
+            <input type="text" placeholder="Tên đăng nhập">
+            <input type="password" placeholder="Mật khẩu">
+            <input type="password" placeholder="Nhập lại mật khẩu">
+
+            <button>Đăng ký</button>
+
+            <p class="switch-form">
+                Đã có tài khoản?
+                <span onclick="switchToLogin()">Đăng nhập</span>
+            </p>
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>
