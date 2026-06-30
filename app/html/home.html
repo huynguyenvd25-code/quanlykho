@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Tổng kho</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Tổng Kho</h2>
+
+        <ul>
+            <li class="active">🏠 Home</li>
+            <li data-page="import.html" onclick="goTo('import.html')">📥 Nhập kho</li>
+            <li data-page="export.html" onclick="goTo('export.html')">📤 Xuất kho</li>
+            <li data-page="inventory.html" onclick="goTo('inventory.html')">📦 Tồn kho</li>
+            <li data-page="history.html" onclick="goTo('history.html')">🕒 Lịch sử</li>
+            <li data-page="support.html" onclick="goTo('support.html')">💬 Hỗ trợ</li>
+        </ul>
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <!-- Top bar -->
+        <header class="topbar">
+            <input type="text" placeholder="Tìm kiếm sản phẩm...">
+
+            <div class="avatar-box">
+                <img src="../images/avatar.png" alt="">
+            </div>
+        </header>
+
+        <!-- Welcome -->
+        <section class="welcome">
+            <h1>Xin chào 👋</h1>
+            <p>Chào mừng quay lại hệ thống quản lý kho</p>
+        </section>
+
+        <!-- Feature Cards -->
+        <section class="features">
+
+            <div class="card" onclick="goTo('nhapkho.html')">
+                <div class="icon">📥</div>
+                <h3>Nhập kho</h3>
+            </div>
+
+            <div class="card" onclick="goTo('xuatkho.html')">
+                <div class="icon">📤</div>
+                <h3>Xuất kho</h3>
+            </div>
+
+            <div class="card" onclick="goTo('tonkho.html')">
+                <div class="icon">📦</div>
+                <h3>Tồn kho</h3>
+            </div>
+
+            <div class="card" onclick="goTo('lichsu.html')">
+                <div class="icon">🕒</div>
+                <h3>Lịch sử</h3>
+            </div>
+
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stats">
+
+            <div class="stat-box">
+                <h2>1,245</h2>
+                <p>Tổng sản phẩm</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>32</h2>
+                <p>Sắp hết hàng</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>87</h2>
+                <p>Đơn hôm nay</p>
+            </div>
+
+        </section>
+
+        <!-- footer -->
+         <section class="content-area">
+            <footer class="footer">
+
+                <div class="footer-column">
+                    <h4>Ý tưởng</h4>
+                    <p>Huy Nguyen</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Thiết kế UI</h4>
+                    <p>Huy Nguyen</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Địa chỉ</h4>
+                    <p>Hà Nội</p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Liên hệ</h4>
+                    <p>0123 456 789</p>
+                </div>
+
+                <div class="footer-bottom">
+                    © 2026 Tổng Kho Management System
+                </div>
+
+            </footer>
+         </section>
+        
+    </main>
+
+</div>
+
+    <script src="../js/sidebar.js"></script>
+
+</body>
+</html>
