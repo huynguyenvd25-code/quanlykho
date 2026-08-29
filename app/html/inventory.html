@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Báo cáo tồn kho vải</title>
+<link rel="stylesheet" href="../css/inventory.css">
+<link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div class="dashboard">
+            <aside class="sidebar">
+                <h2>Tổng Kho</h2>
+
+                <ul>
+                    <li data-page="home.html" onclick="goTo('home.html')">🏠 Home</li>
+                    <li data-page="import.html" onclick="goTo('import.html')">📥 Nhập kho</li>
+                    <li data-page="export.html" onclick="goTo('export.html')">📤 Xuất kho</li>
+                    <li data-page="inventory.html" onclick="goTo('inventory.html')">📦 Tồn kho</li>
+                    <li data-page="history.html" onclick="goTo('history.html')">🕒 Lịch sử</li>
+                    <li data-page="support.html" onclick="goTo('support.html')">💬 Hỗ trợ</li>
+                </ul>
+            </aside>
+        <main class="main-content">
+
+            <header class="topbar">
+                <input type="text" placeholder="Tìm kiếm cuộn vải...">
+
+                <div class="avatar-box">
+                    <img src="../images/avatar.jpg" alt="">
+                </div>
+            </header>
+
+            <section class="welcome">
+                <h1>Tồn kho vải 📦</h1>
+                <p>Quản lý cuộn vải hiện có trong kho</p>
+            </section>
+
+            <!-- Filter -->
+            <section class="inventory-filter">
+                <select>
+                    <option>Loại vải</option>
+                    <option>Cotton</option>
+                    <option>Linen</option>
+                    <option>Denim</option>
+                </select>
+
+                <select>
+                    <option>Màu sắc</option>
+                    <option>Trắng</option>
+                    <option>Đen</option>
+                    <option>Xanh</option>
+                </select>
+
+                <select>
+                    <option>Trạng thái</option>
+                    <option>Còn nhiều</option>
+                    <option>Sắp hết</option>
+                    <option>Gần hết</option>
+                </select>
+
+                <button>Xem báo cáo</button>
+            </section>
+
+            <!-- Stats -->
+            <section class="stats">
+                <div class="stat-box">
+                    <h2>245</h2>
+                    <p>Tổng cuộn</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>18,520m</h2>
+                    <p>Tổng mét</p>
+                </div>
+
+                <div class="stat-box">
+                    <h2>17</h2>
+                    <p>Sắp hết</p>
+                </div>
+            </section>
+
+            <!-- Table -->
+            <section class="inventory-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên vải</th>
+                            <th>Loại</th>
+                            <th>Màu</th>
+                            <th>Khổ</th>
+                            <th>Mét còn</th>
+                            <th>Giá/m</th>
+                            <th>Trạng thái</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>R001</td>
+                            <td>Cotton HQ</td>
+                            <td>Cotton</td>
+                            <td>Trắng</td>
+                            <td>1m6</td>
+                            <td>72m</td>
+                            <td>50,000</td>
+                            <td><span class="green">Còn nhiều</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>R002</td>
+                            <td>Denim Nhật</td>
+                            <td>Denim</td>
+                            <td>Xanh</td>
+                            <td>1m4</td>
+                            <td>18m</td>
+                            <td>120,000</td>
+                            <td><span class="yellow">Sắp hết</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>R003</td>
+                            <td>Linen Hàn</td>
+                            <td>Linen</td>
+                            <td>Đen</td>
+                            <td>1m5</td>
+                            <td>4m</td>
+                            <td>90,000</td>
+                            <td><span class="red">Gần hết</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="../js/sidebar.js"></script>
+
+</body>
+</html>

@@ -13,13 +13,30 @@
         <nav class="navbar">
 
             <div class="menu-left">
-            ☰
+                <img src="../assets/images/logo.png" alt="Logo" onclick="goHome()">
             </div>
 
             <div class="menu-links">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
+
+                <div class="dropdown">
+                    <a href="#">Home</a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Thông tin</a>
+                    <div class="dropdown-content">
+                        <p>Địa chỉ: Hà Nội, Việt Nam</p>
+                        <p>Email: huynguyenvd25@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#">Liên hệ</a>
+                    <div class="dropdown-content">
+                        <p>0989898989</p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="auth-buttons">
@@ -34,7 +51,7 @@
 
             <div class="text">
 
-            <h1>Gallery</h1>
+            <h1>Welcome</h1>
 
             <p>
                 Hệ thống quản lý kho hiện đại,
@@ -60,10 +77,11 @@
 
             <h2>Đăng nhập</h2>
 
-            <input type="text" placeholder="Tên đăng nhập">
-            <input type="password" placeholder="Mật khẩu">
+            <input id="registerUsername" type="text" placeholder="Tên đăng nhập">
+            <input id="registerPassword" type="password" placeholder="Mật khẩu">
+            <input id="registerPassword2" type="password" placeholder="Nhập lại mật khẩu">
 
-            <button>Đăng nhập</button>
+            <button onclick="login()">Đăng nhập</button>
 
             <p class="switch-form">
                 Chưa có tài khoản?

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Hỗ trợ</title>
+    <link rel="stylesheet" href="../css/support.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <h2>Tổng Kho</h2>
+        <ul>
+            <li data-page="home.html" onclick="goTo('home.html')">🏠 Home</li>
+            <li data-page="import.html" onclick="goTo('import.html')">📥 Nhập kho</li>
+            <li data-page="export.html" onclick="goTo('export.html')">📤 Xuất kho</li>
+            <li data-page="inventory.html" onclick="goTo('inventory.html')">📦 Tồn kho</li>
+            <li data-page="history.html" onclick="goTo('history.html')">🕒 Lịch sử</li>
+            <li data-page="support.html" onclick="goTo('support.html')">💬 Hỗ trợ</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <input type="text" placeholder="Tìm kiếm hỗ trợ...">
+            <div class="avatar-box">
+                <img src="../images/avatar.jpg">
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h1>Hỗ trợ 💬</h1>
+            <p>Liên hệ và gửi vấn đề cần hỗ trợ</p>
+        </section>
+
+        <section class="support-box">
+            <form class="support-form">
+                <input type="text" placeholder="Họ tên">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Tiêu đề">
+
+                <textarea placeholder="Nhập nội dung hỗ trợ..."></textarea>
+
+                <button type="submit">Gửi hỗ trợ</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+    <script src="../js/sidebar.js"></script>
+
+</body>
+</html>
