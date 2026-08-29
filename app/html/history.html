@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lịch sử</title>
+    <link rel="stylesheet" href="../css/history.css">
+</head>
+<body>
+
+<div class="dashboard">
+    <aside class="sidebar">
+        <h2>Tổng Kho</h2>
+        <ul>
+            <li data-page="home.html" onclick="goTo('home.html')">🏠 Home</li>
+            <li data-page="import.html" onclick="goTo('import.html')">📥 Nhập kho</li>
+            <li data-page="export.html" onclick="goTo('export.html')">📤 Xuất kho</li>
+            <li data-page="inventory.html" onclick="goTo('inventory.html')">📦 Tồn kho</li>
+            <li data-page="history.html" onclick="goTo('history.html')">🕒 Lịch sử</li>
+            <li data-page="support.html" onclick="goTo('support.html')">💬 Hỗ trợ</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <input type="text" placeholder="Tìm kiếm lịch sử...">
+            <div class="avatar-box">
+                <img src="../images/avatar.jpg">
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h1>Lịch sử giao dịch 🕒</h1>
+            <p>Theo dõi nhập / xuất kho</p>
+        </section>
+
+        <section class="history-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ngày</th>
+                        <th>Mã vải</th>
+                        <th>Tên vải</th>
+                        <th>Loại</th>
+                        <th>Số mét</th>
+                        <th>Giao dịch</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25/06/2026</td>
+                        <td>R001</td>
+                        <td>Cotton HQ</td>
+                        <td>Cotton</td>
+                        <td>50m</td>
+                        <td><span class="import">Nhập</span></td>
+                    </tr>
+                    <tr>
+                        <td>26/06/2026</td>
+                        <td>R002</td>
+                        <td>Denim Nhật</td>
+                        <td>Denim</td>
+                        <td>20m</td>
+                        <td><span class="export">Xuất</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+
+    <script src="../js/sidebar.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập Kho</title>
+    <link rel="stylesheet" href="../css/import.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <div class="dashboard">
+    <aside class="sidebar">
+        <!-- sidebar giữ nguyên -->
+         <h2>Tổng Kho</h2>
+
+        <ul>
+            <li data-page="home.html" onclick="goTo('home.html')">🏠 Home</li>
+            <li data-page="import.html" onclick="goTo('import.html')">📥 Nhập kho</li>
+            <li data-page="export.html" onclick="goTo('export.html')">📤 Xuất kho</li>
+            <li data-page="inventory.html" onclick="goTo('inventory.html')">📦 Tồn kho</li>
+            <li data-page="history.html" onclick="goTo('history.html')">🕒 Lịch sử</li>
+            <li data-page="support.html" onclick="goTo('support.html')">💬 Hỗ trợ</li>
+        </ul>
+    </aside>
+
+    <main class="main-content">
+        <header class="topbar">
+            <!-- topbar giữ nguyên -->
+             <input type="text" placeholder="Tìm kiếm sản phẩm...">
+
+            <div class="avatar-box">
+                <img src="../images/avatar.jpg" alt="">
+            </div>
+        </header>
+
+        <section class="welcome">
+            <h1>Nhập kho 📥</h1>
+            <p>Thêm cuộn vải mới vào kho</p>
+        </section>
+
+        <section class="import-form-box">
+            <form class="import-form">
+                <input type="text" placeholder="Mã vải">
+                <input type="text" placeholder="Tên vải">
+
+                <select>
+                    <option>Loại vải</option>
+                    <option>Cotton</option>
+                    <option>Linen</option>
+                    <option>Denim</option>
+                </select>
+
+                <input type="text" placeholder="Màu">
+                <input type="number" placeholder="Số mét">
+                <input type="number" placeholder="Giá / mét">
+
+                <button type="submit">Nhập kho</button>
+            </form>
+        </section>
+    </main>
+</div>
+    <script src="../js/import.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>
